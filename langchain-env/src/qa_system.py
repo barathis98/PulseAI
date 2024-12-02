@@ -37,7 +37,7 @@ def create_qa_chain(vector_store):
         )
     )
 
-    model = ChatOpenAI(model = 'gpt-4', temperature = 0)
+    model = ChatOpenAI(model = 'gpt-4o-mini', temperature = 0)
     qa_chain = RetrievalQA.from_chain_type(retriever = retriever, chain_type_kwargs = {"prompt":prompt_template}, llm = model, chain_type = "stuff")
 
     return qa_chain
