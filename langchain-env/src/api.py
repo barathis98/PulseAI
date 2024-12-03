@@ -10,7 +10,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    "https://pulse-ui-six.vercel.app/"
+    "https://pulse-ui-six.vercel.app"
 
 ]
 
